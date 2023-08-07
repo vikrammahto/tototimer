@@ -4,25 +4,25 @@ import TodoContext from '../context/TodoContext';
 const AddTodo = () => {
   const { text, handleTextChange, handleSubmit } = useContext(TodoContext);
   return (
-    <div>
-      <form className="flex flex-col mb-3" onSubmit={handleSubmit}>
+    <form className="flex flex-col mb-3" onSubmit={handleSubmit}>
+      <div class="relative border border-gray-300 rounded-lg">
         <input
           type="text"
-          name=""
-          id=""
           value={text}
           onChange={handleTextChange}
-          placeholder="Eg: Design wireframe, create schedule"
-          className="border border-gray-300 px-5 py-2.5 rounded"
+          class="h-14 w-100 rounded-lg pl-3 z-0 focus:outline-none"
+          placeholder="Eg: Prepare weekly schedule"
         />
-        <button
-          type="submit"
-          className="text-white rounded bg-sky-500 px-5 py-2.5 mt-3 font-semibold"
-        >
-          Add task
-        </button>
-      </form>
-    </div>
+        <div class="absolute top-2 right-2">
+          <button
+            type="submit"
+            class="h-10 w-20 text-white rounded-lg bg-sky-500 hover:bg-sky-700 focus:bg-sky-500 focus:rounded-lg"
+          >
+            Add
+          </button>
+        </div>
+      </div>
+    </form>
   );
 };
 
