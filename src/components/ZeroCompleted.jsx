@@ -2,10 +2,10 @@ import React from 'react';
 
 const ZeroCompleted = () => {
   return (
-    <div className="flex flex-col flex-wrap content-center justify-center h-64 px-20 text-center w-100 bg-gray-50">
+    <div className="flex flex-col flex-wrap content-center justify-center h-64 px-20 text-center w-100 bg-gray-50 ">
       <div className="text-center">
         <svg
-          className="w-20 h-20 text-gray-200"
+          className="inline-block w-20 h-20 text-gray-200"
           fill="none"
           stroke="currentColor"
           viewBox="0 0 24 24"
@@ -19,7 +19,7 @@ const ZeroCompleted = () => {
           ></path>
         </svg>
       </div>
-      <h3>You haven't finished any task yet.</h3>
+      <h3 className="text-gray-400">You haven't finished any task yet.</h3>
     </div>
   );
 };

@@ -19,7 +19,7 @@ const NoTask = () => {
           ></path>
         </svg>
       </div>
-      <h3>You don't have any tasks today.</h3>
+      <h3 className="text-gray-400">You don't have any tasks today.</h3>
     </div>
   );
 };
