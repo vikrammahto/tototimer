@@ -7,7 +7,7 @@ const SingleTodo = ({ todo }) => {
   return (
     <div>
       <div
-        className={`flex items-center px-5 py-2.5 mb-3 rounded justify-between ${
+        className={`flex items-center px-3 py-2.5 mb-3 rounded justify-between ${
           !completed ? 'bg-green-50' : 'bg-rose-50'
         } group`}
       >
@@ -18,7 +18,7 @@ const SingleTodo = ({ todo }) => {
             id={id}
             checked={completed}
             onChange={() => handleToggleComplete(id)}
-            className="w-4 h-4 border border-gray-300 me-3"
+            className="w-4 h-4 border border-gray-300 rounded shadow-sm checked:bg-rose-300 me-3 focus:border-rose-300 focus:ring focus:ring-offset-0 focus:ring-rose-200 focus:ring-opacity-50 "
           />
           <h3 className={completed ? 'line-through' : ''}>{task}</h3>
         </div>

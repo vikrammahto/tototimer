@@ -10,7 +10,7 @@ const AddTodo = () => {
           type="text"
           value={text}
           onChange={handleTextChange}
-          class="h-14 w-100 rounded-lg pl-3 z-0 focus:outline-none"
+          class="h-14 w-100 rounded-lg pl-3 z-0 focus:outline-none border-none focus:ring-0"
           placeholder="Eg: Prepare weekly schedule"
         />
         <div class="absolute top-2 right-2">
