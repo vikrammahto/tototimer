@@ -24,7 +24,7 @@ const SingleTodo = ({ todo }) => {
         </div>
         <button
           onClick={() => handleDelete(id)}
-          className="hidden group-hover:inline-flex"
+          className="lg:hidden group-hover:inline-flex"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
