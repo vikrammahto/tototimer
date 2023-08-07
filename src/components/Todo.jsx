@@ -10,22 +10,32 @@ const Todo = () => {
   const completedTodos = todos.filter((todo) => todo.completed);
   const notCompletedTodos = todos.filter((todo) => !todo.completed);
   return (
-    <div>
+    <div className="relative w-full">
       <AddTodo />
-      <h3 className="mt-5 mb-3 text-2xl font-medium text-center ">Task</h3>
-      {notCompletedTodos.length === 0 ? (
-        <NoTask />
-      ) : (
-        notCompletedTodos.map((todo) => (
-          <SingleTodo key={todo.id} todo={todo} />
-        ))
-      )}
-      <h3 className="mt-5 mb-3 text-2xl font-medium text-center">Completed</h3>
-      {completedTodos.length === 0 ? (
-        <ZeroCompleted />
-      ) : (
-        completedTodos.map((todo) => <SingleTodo key={todo.id} todo={todo} />)
-      )}
+      <div className="flex flex-col md:flex-row">
+        <div className="md:w-1/2 md:m-3">
+          <h3 className="mt-5 mb-3 text-2xl font-medium text-center ">Task</h3>
+          {notCompletedTodos.length === 0 ? (
+            <NoTask />
+          ) : (
+            notCompletedTodos.map((todo) => (
+              <SingleTodo key={todo.id} todo={todo} />
+            ))
+          )}
+        </div>
+        <div className="md:w-1/2 md:m-3">
+          <h3 className="mt-5 mb-3 text-2xl font-medium text-center">
+            Completed
+          </h3>
+          {completedTodos.length === 0 ? (
+            <ZeroCompleted />
+          ) : (
+            completedTodos.map((todo) => (
+              <SingleTodo key={todo.id} todo={todo} />
+            ))
+          )}
+        </div>
+      </div>
     </div>
   );
 };
