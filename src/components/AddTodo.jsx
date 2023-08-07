@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import TodoContext from '../context/TodoContext';
 
-const AddTodo = ({ text, handleSubmit, handleTextChange }) => {
+const AddTodo = () => {
+  const { text, handleTextChange, handleSubmit } = useContext(TodoContext);
   return (
     <div>
       <form className="flex flex-col mb-3" onSubmit={handleSubmit}>

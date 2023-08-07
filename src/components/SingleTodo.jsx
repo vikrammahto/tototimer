@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import TodoContext from '../context/TodoContext';
 
-const SingleTodo = ({ todo, handleDelete, handleToggleComplete }) => {
+const SingleTodo = ({ todo }) => {
   const { id, task, completed } = todo;
-
+  const { handleDelete, handleToggleComplete } = useContext(TodoContext);
   return (
     <div>
       <div
         className={`flex items-center px-5 py-2.5 mb-3 rounded justify-between ${
-          !completed ? 'bg-green-50' : 'bg-red-100'
-        }`}
+          !completed ? 'bg-green-50' : 'bg-rose-50'
+        } group`}
       >
         <div className="flex items-center">
           <input
@@ -21,7 +22,10 @@ const SingleTodo = ({ todo, handleDelete, handleToggleComplete }) => {
           />
           <h3 className={completed ? 'line-through' : ''}>{task}</h3>
         </div>
-        <button onClick={() => handleDelete(id)}>
+        <button
+          onClick={() => handleDelete(id)}
+          className="hidden group-hover:inline-flex"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-x"
