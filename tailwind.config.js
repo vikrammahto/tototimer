@@ -10,7 +10,7 @@ module.exports = {
       backgroundImage: {
         sunrise: "url('/src/assets/img/sunrise.jpg')",
         sunset: "url('/src/assets/img/sunset.jpg')",
-        pomodoro: "url('/src/assets/img/pomodoro.jpg')",
+        pomodoro: "url('/src/assets/img/pomodoro.webp')",
       },
     },
   },
