@@ -5,7 +5,7 @@ const AddTodo = () => {
   const { text, handleTextChange, handleSubmit } = useContext(TodoContext);
   return (
     <form
-      className="sticky top-0 flex flex-col px-3 py-3 mb-3 bg-white"
+      className="sticky top-0 flex flex-col py-3 mb-3 bg-white"
       onSubmit={handleSubmit}
     >
       <div className="relative bg-white border border-gray-300 rounded-lg">
