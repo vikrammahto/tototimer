@@ -95,7 +95,7 @@ const Weather = () => {
   return (
     <div>
       <form
-        className="sticky top-0 flex flex-col py-3 mb-3 bg-white"
+        className="sticky top-0 flex flex-col px-4 py-3 mb-3 bg-white"
         onSubmit={handleSubmit}
       >
         <div className="relative bg-white border border-gray-300 rounded-lg">
