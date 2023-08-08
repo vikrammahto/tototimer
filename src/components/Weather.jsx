@@ -118,7 +118,7 @@ const Weather = () => {
       </form>
       {weatherData ? (
         <React.Fragment>
-          <div className="flex flex-col md:items-stretch md:flex-row">
+          <div className="flex flex-col px-5 md:items-stretch md:flex-row">
             <div className="w-full md:w-3/5">
               <div className="flex flex-col h-full p-5 rounded bg-amber-200">
                 <div className="flex justify-between h-full">
@@ -163,14 +163,18 @@ const Weather = () => {
                 >
                   <div className="flex flex-col items-center w-full h-full p-5 rounded backdrop-brightness-75 bg-amber-300/30">
                     <IconSunrise />
-                    <h3 className="text-3xl font-extrabold lowercase">{sunrise}</h3>
+                    <h3 className="text-3xl font-extrabold lowercase">
+                      {sunrise}
+                    </h3>
                     <h3>Sunrise</h3>
                   </div>
                 </div>
                 <div className="flex flex-col items-center w-1/2 text-white bg-cover rounded bg-sunset ms-3 md:w-full md:ms-0 md:mt-3">
                   <div className="flex flex-col items-center w-full h-full p-5 rounded backdrop-brightness-75 bg-slate-900/30">
                     <IconSunset />
-                    <h3 className="text-3xl font-extrabold lowercase">{sunset}</h3>
+                    <h3 className="text-3xl font-extrabold lowercase">
+                      {sunset}
+                    </h3>
                     <h3>Sunset</h3>
                   </div>
                 </div>

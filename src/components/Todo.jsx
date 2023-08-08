@@ -10,7 +10,7 @@ const Todo = () => {
   const completedTodos = todos.filter((todo) => todo.completed);
   const notCompletedTodos = todos.filter((todo) => !todo.completed);
   return (
-    <div className="relative w-full">
+    <div className="relative w-full px-5 overflow-y-auto">
       <AddTodo />
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 md:m-3">
