@@ -7,6 +7,10 @@ module.exports = {
       fontFamily: {
         sans: ['Inter', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        sunrise: "url('/src/assets/img/sunrise.jpg')",
+        sunset: "url('/src/assets/img/sunset.jpg')",
+      },
     },
   },
   plugins: [require('@tailwindcss/forms')],
