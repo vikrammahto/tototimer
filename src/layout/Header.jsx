@@ -60,7 +60,7 @@ const Header = () => {
             <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9"></path>
           </svg>
         </figure>
-        <h3 className="text-xl font-semibold ms-3">Tototimer</h3>
+        <span className="text-xl font-semibold ms-3">Tototimer</span>
       </div>
       <h6 className="text-sm">
         <span>{date}</span>{' '}

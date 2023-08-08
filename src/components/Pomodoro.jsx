@@ -7,7 +7,7 @@ import {
 import PomodoroModal from './PomodoroModal';
 
 const Pomodoro = () => {
-  const [timer, setTimer] = useState(2);
+  const [timer, setTimer] = useState(1500);
   const [isActive, setIsActive] = useState(false);
   const [breakType, setBreakType] = useState('pomodoro');
   const [open, setOpen] = useState(false);
@@ -27,14 +27,14 @@ const Pomodoro = () => {
 
   const resetTimer = () => {
     setTimer(
-      breakType === 'pomodoro' ? 2 : breakType === 'short_break' ? 300 : 900
+      breakType === 'pomodoro' ? 1500 : breakType === 'short_break' ? 300 : 900
     );
     setIsActive(false);
   };
 
   useEffect(() => {
     setTimer(
-      breakType === 'pomodoro' ? 2 : breakType === 'short_break' ? 300 : 900
+      breakType === 'pomodoro' ? 1500 : breakType === 'short_break' ? 300 : 900
     );
   }, [breakType]);
 
@@ -54,7 +54,7 @@ const Pomodoro = () => {
 
   const toggleFullScreen = () => {
     if (!isFullscreen) {
-      const element = document.querySelector('#pomodoro');
+      const element = document.querySelector('#pomodoro-container');
       if (element.requestFullscreen) {
         element.requestFullscreen();
       } else if (element.webkitRequestFullscreen) {
@@ -82,7 +82,10 @@ const Pomodoro = () => {
   const checkboxStyle =
     'px-3 py-1 rounded-full border-2 border-white cursor-pointer focus:outline-none hover:bg-gray-50  peer-checked:bg-white text-white peer-checked:text-gray-700 hover:text-gray-700';
   return (
-    <div id="pomodoro" className="overflow-y-hidden bg-cover bg-pomodoro">
+    <div
+      id="pomodoro-container"
+      className="overflow-y-hidden bg-cover bg-pomodoro"
+    >
       <div className="relative w-full h-full backdrop-brightness-75 bg-slate-900/30">
         {isFullscreen ? (
           <IconWindowMinimize
@@ -151,6 +154,7 @@ const Pomodoro = () => {
               {isActive ? 'Pause' : 'Start'}
             </button>
             <button className="mx-3 text-white" onClick={resetTimer}>
+              <span className="sr-only">Reset timer</span>
               <IconRotateClockwise size={34} />
             </button>
           </div>
