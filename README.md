@@ -2,6 +2,8 @@
 
 Tototimer is your all-in-one solution for efficient time management, productivity, and organization. Built using React JS and Tailwind CSS.
 
+![Tototimer](https://raw.githubusercontent.com/vikrammahto/tototimer/master/public/cover.svg "Tototimer - PWA App to Manage Time, Money and Work")
+
 ## Features
 
 - Pomodoro timer
