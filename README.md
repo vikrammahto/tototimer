@@ -1,4 +1,4 @@
-# Tototimer - A Simple App to Manage Time, Money and Work
+# Tototimer - PWA App to Manage Time, Money and Work
 
 Tototimer is your all-in-one solution for efficient time management, productivity, and organization. Built using React JS and Tailwind CSS.
 
