@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Tototimer - A Simple App to Manage Time, Money and Work
+
+Tototimer is your all-in-one solution for efficient time management, productivity, and organization. Built using React JS and Tailwind CSS.
+
+## Features
+
+- Pomodoro timer
+- Task Manger [Todo List]
+- Live Weather Forecast
+- Upcoming features: Notes, Income/Expense Tracker
+
+## Developemnt
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+```shell
+git clone https://github.com/vikrammahto/tototimer.git
+```
 
-### `npm start`
+```shell
+cd tototimer
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```shell
+npm install
+```
+```shell
+npm start
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  Contribution
+To contribute on this project follow below steps.
 
-### `npm test`
+PS: Create an issue before start working
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Fork it
+2. Create your a new branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
 
-### `npm run build`
+## Credits
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Image: Pixabay | [5187396](https://pixabay.com/illustrations/horse-man-desert-rider-person-2255876/), [Patricia_Roman](https://pixabay.com/illustrations/landscape-deer-mountain-nature-5426755/), [kskr123pak](https://pixabay.com/illustrations/sea-sunset-boat-nature-ocean-sky-7331682/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Icons: [Tabler Icons](https://tabler-icons.io/)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Weather API: [OpenWeatherMap](https://openweathermap.org/api)
 
-### `npm run eject`
+## License
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is open source and available under the MIT License.
