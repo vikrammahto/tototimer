@@ -16,9 +16,15 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    },
+    {
+      "src": "mstile-150x150.png",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ],
-  "start_url": "https://tototimer.vercel.app/",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
