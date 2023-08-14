@@ -11,16 +11,19 @@ import axios from 'axios';
 const Weather = () => {
   const api_key = 'ca6f425a16e6df0c0a6cd3a706a0ff8c';
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState('New Delhi');
+  const [city, setCity] = useState(['New Delhi']);
+  const [searchCriteria, setSearchCriteria] = useState("")
 
   const handleTextChange = (e) => {
-    setCity(e.target.value);
+    setSearchCriteria(e.target.value);
+    localStorage.setItem('savedLocation', e.target.value)
+    setCity([localStorage.getItem('savedLocation')])
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     fetchWeatherData();
-    setCity('');
+    setSearchCriteria('')
   };
 
   const fetchWeatherData = () => {
@@ -38,8 +41,15 @@ const Weather = () => {
   };
 
   useEffect(() => {
-    fetchWeatherData();
-    setCity('');
+    if (localStorage) {
+      if (!localStorage.getItem('savedLocation')) {
+        localStorage.setItem('savedLocation', 'New Delhi')
+        fetchWeatherData();
+      } else {
+        city[0] = localStorage.getItem('savedLocation')
+        fetchWeatherData();
+      }
+    }
   }, []);
 
   function formatDateAndTime(date) {
@@ -101,7 +111,7 @@ const Weather = () => {
         <div className="relative bg-white border border-gray-300 rounded-lg">
           <input
             type="text"
-            value={city}
+            value={searchCriteria}
             onChange={handleTextChange}
             className="z-0 w-full pl-3 border-none rounded-lg h-14 focus:outline-none focus:ring-0"
             placeholder="Eg: New Delhi"
