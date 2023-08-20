@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Header = () => {
   function formatDateAndTime(date) {
@@ -35,9 +35,22 @@ const Header = () => {
     };
   }
 
-  const currentDate = new Date();
+  let currentDate = new Date();
 
   const { date, time } = formatDateAndTime(currentDate);
+  const [updateTime, setUpdateTime] = React.useState("");
+
+  useEffect(() => {
+
+    const timeInterval = setInterval(() => {
+      setUpdateTime(currentDate = new Date().toLocaleTimeString());
+    }, 1000);
+
+    return () => {
+      clearInterval(timeInterval);
+    }
+  }, [])
+
 
   return (
     <div className="sticky top-0 z-50 flex items-center justify-between p-3 bg-white border-b shadow-sm">
