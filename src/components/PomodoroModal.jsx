@@ -55,7 +55,7 @@ const PomodoroModal = ({ open, setOpen, setTimer, setBreakType }) => {
                 <div className="justify-center px-4 py-3 sm:flex sm:px-6">
                   <button
                     type="button"
-                    className="inline-flex justify-center px-3 py-2 mt-3 text-sm font-semibold text-white bg-red-600 rounded-full shadow-sm ring-1 ring-insetsm:mt-0 sm:w-auto sm:ms-3 hover:bg-red-500 ring-red-500"
+                    className="inline-flex justify-center px-3 py-2 mt-3 text-sm font-semibold text-white bg-red-600 rounded-full shadow-xs ring-1 ring-insetsm:mt-0 sm:w-auto sm:ms-3 hover:bg-red-500 ring-red-500"
                     onClick={() => {
                       setOpen(false);
                       setTimer(300);
@@ -67,7 +67,7 @@ const PomodoroModal = ({ open, setOpen, setTimer, setBreakType }) => {
                   </button>
                   <button
                     type="button"
-                    className="inline-flex justify-center px-3 py-2 mt-3 text-sm font-semibold bg-white rounded-full shadow-sm ring-1 sm:w-auto sm:ms-3 hover:bg-gray-100 ring-gray-300"
+                    className="inline-flex justify-center px-3 py-2 mt-3 text-sm font-semibold bg-white rounded-full shadow-xs ring-1 sm:w-auto sm:ms-3 hover:bg-gray-100 ring-gray-300"
                     onClick={() => {
                       setOpen(false);
                       setTimer(2);

@@ -12,7 +12,7 @@ import Notes from './pages/Notes';
 function App() {
   return (
     <Router>
-      <div className="flex flex-col h-screen mx-auto lg:border sm:max-w-xl md:max-w-full lg:max-w-screen-xl ">
+      <div className="flex flex-col h-screen mx-auto lg:border sm:max-w-xl md:max-w-full lg:max-w-(--breakpoint-xl) ">
         <Header className="sticky top-0 z-50" />
         <div className="flex flex-1 overflow-y-hidden">
           <SidebarMenu className="sticky top-0 z-50" />

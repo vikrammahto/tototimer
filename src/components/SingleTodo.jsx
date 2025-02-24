@@ -18,7 +18,7 @@ const SingleTodo = ({ todo }) => {
             id={id}
             checked={completed}
             onChange={() => handleToggleComplete(id)}
-            className="w-4 h-4 border border-gray-300 rounded shadow-sm checked:bg-rose-300 me-3 focus:border-rose-300 focus:ring focus:ring-offset-0 focus:ring-rose-200 focus:ring-opacity-50 "
+            className="w-4 h-4 border border-gray-300 rounded-sm shadow-xs checked:bg-rose-300 me-3 focus:border-rose-300 focus:ring-3 focus:ring-offset-0 focus:ring-rose-200 focus:ring-opacity-50 "
           />
           <h3 className={completed ? 'line-through' : ''}>{task}</h3>
         </div>

@@ -53,7 +53,7 @@ const Header = () => {
 
 
   return (
-    <div className="sticky top-0 z-50 flex items-center justify-between p-3 bg-white border-b shadow-sm">
+    <div className="sticky top-0 z-50 flex items-center justify-between p-3 bg-white border-b shadow-xs">
       <div className="flex items-center">
         <figure className="inline-flex p-2 rounded-full bg-sky-200 text-sky-500">
           <svg

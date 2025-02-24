@@ -13,7 +13,7 @@ const AddTodo = () => {
           type="text"
           value={text}
           onChange={handleTextChange}
-          className="z-0 w-full pl-3 border-none rounded-lg h-14 focus:outline-none focus:ring-0"
+          className="z-0 w-full pl-3 border-none rounded-lg h-14 focus:outline-hidden focus:ring-0"
           placeholder="Eg: Prepare weekly schedule"
         />
         <div className="absolute top-2 right-2">

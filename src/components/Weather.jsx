@@ -113,7 +113,7 @@ const Weather = () => {
             type="text"
             value={searchCriteria}
             onChange={handleTextChange}
-            className="z-0 w-full pl-3 border-none rounded-lg h-14 focus:outline-none focus:ring-0"
+            className="z-0 w-full pl-3 border-none rounded-lg h-14 focus:outline-hidden focus:ring-0"
             placeholder="Eg: New Delhi"
           />
           <div className="absolute top-2 right-2">
@@ -130,7 +130,7 @@ const Weather = () => {
         <React.Fragment>
           <div className="flex flex-col px-5 md:items-stretch md:flex-row">
             <div className="w-full md:w-3/5">
-              <div className="flex flex-col h-full p-5 rounded bg-amber-200">
+              <div className="flex flex-col h-full p-5 rounded-sm bg-amber-200">
                 <div className="flex justify-between h-full">
                   <div>
                     <h2 className="text-4xl font-extrabold">
@@ -148,7 +148,7 @@ const Weather = () => {
                     <IconSunFilled size={72} className="text-amber-400" />
                   </div>
                 </div>
-                <div className="flex justify-between p-2 mt-3 rounded shadow-md backdrop-blur-sm bg-white/30">
+                <div className="flex justify-between p-2 mt-3 rounded-sm shadow-md backdrop-blur-xs bg-white/30">
                   <div className="flex p-1">
                     <IconWind />
                     <h3 className="text-lg font-semibold">
@@ -169,9 +169,9 @@ const Weather = () => {
             <div className="w-full md:w-2/5 md:ms-3 md:h-full">
               <div className="flex my-3 md:flex-col md:my-0">
                 <div
-                  className={`w-1/2 bg-cover rounded text-white bg-sunrise md:w-full`}
+                  className={`w-1/2 bg-cover rounded-sm text-white bg-sunrise md:w-full`}
                 >
-                  <div className="flex flex-col items-center w-full h-full p-5 rounded backdrop-brightness-75 bg-amber-300/30">
+                  <div className="flex flex-col items-center w-full h-full p-5 rounded-sm backdrop-brightness-75 bg-amber-300/30">
                     <IconSunrise />
                     <h3 className="text-3xl font-extrabold lowercase">
                       {sunrise}
@@ -179,8 +179,8 @@ const Weather = () => {
                     <h3>Sunrise</h3>
                   </div>
                 </div>
-                <div className="flex flex-col items-center w-1/2 text-white bg-cover rounded bg-sunset ms-3 md:w-full md:ms-0 md:mt-3">
-                  <div className="flex flex-col items-center w-full h-full p-5 rounded backdrop-brightness-75 bg-slate-900/30">
+                <div className="flex flex-col items-center w-1/2 text-white bg-cover rounded-sm bg-sunset ms-3 md:w-full md:ms-0 md:mt-3">
+                  <div className="flex flex-col items-center w-full h-full p-5 rounded-sm backdrop-brightness-75 bg-slate-900/30">
                     <IconSunset />
                     <h3 className="text-3xl font-extrabold lowercase">
                       {sunset}

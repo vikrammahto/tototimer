@@ -80,7 +80,7 @@ const Pomodoro = () => {
   };
 
   const checkboxStyle =
-    'px-3 py-1 rounded-full border-2 border-white cursor-pointer focus:outline-none hover:bg-gray-50  peer-checked:bg-white text-white peer-checked:text-gray-700 hover:text-gray-700';
+    'px-3 py-1 rounded-full border-2 border-white cursor-pointer focus:outline-hidden hover:bg-gray-50  peer-checked:bg-white text-white peer-checked:text-gray-700 hover:text-gray-700';
   return (
     <div
       id="pomodoro-container"
